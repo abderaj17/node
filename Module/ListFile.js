@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 function listFiles(directory){
-    fs.readFile(directory, (err, files)=>{
+    fs.readdir(directory, (err, files)=>{
         if(err){
             console.log("Error reading directory", err);
             return;
